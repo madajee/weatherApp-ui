@@ -1,0 +1,27 @@
+{
+  "name": "weatherApp-ui",
+  "version": "0.2.6",
+  "description": "WeathetApp UI",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "2.5.6",
+    "express": "4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/weatherApp-ui"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "angular"
+  ],
+  "license": "MIT"
+}
