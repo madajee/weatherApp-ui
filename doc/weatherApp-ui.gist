@@ -1,0 +1,10 @@
+git clone https://github.com/madajee/weatherApp-ui.git
+cd weatherApp-ui
+Create an account on Heroku.
+git add .
+git commit -m "demo"
+heroku create
+git push heroku master
+heroku ps:scale web=1
+heroku open
+Enter the city and hit Enter. It will display the temp in metric for the specified city.
