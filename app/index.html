@@ -6,25 +6,17 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.module.js"></script>
-    <!--<script src="phone-list/phone-list.module.js"></script>
-    <script src="phone-list/phone-list.component.js"></script>-->
   </head>
-  <!--<body>
-      <p> Hello Nodejs Angular Seed </p>-->
-     <!-- <div ng-app="">
-		  <p>Name : <input type="text" ng-model="name"></p>
-		  <h1>Hello {{name}}</h1>
-	  </div>-->
-     <!-- Use a custom component to render a list of phones -->
-   <!-- <phone-list></phone-list> -->
-  <!--</body>-->
 
-<body>
-  <div ng-app="weatherApp" ng-controller="weatherapiController"> 
-    <p>Name : <input type="text" value="Atlanta"></p>
-    <h1>Hello {{cityname}}</h1>
-    <p> City Temp : {{ data }} </p>
-  </div>
+  <body>
+    <div ng-app="weatherApp" ng-controller="weatherapiController"> 
+      <p>PlaceholderID: <input type="text" name=placeid ng-model="placeid"ng-click="updatePlaceData(placeid)" ng-keydown="$event.which === 13 && updatePlaceData(placeid)"></p>
+      <!--<button ng-click=updatePlaceData(placeid)>Change Place ID</button>-->
+      <p>PlaceData: {{ placeData }} </p>
+
+      <p>CityName: <input type="text" name=cityname ng-model="cityname" ng-click="updateCityTemp(cityname)" ng-keydown="$event.which === 13 && updateCityTemp(cityname)"></p>
+      <p>CityTemp: {{ citytemp }} </p>
+    </div>
 
 </body>
 
